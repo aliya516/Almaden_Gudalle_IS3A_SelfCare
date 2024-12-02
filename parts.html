@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow Haven</title>
+  <link rel="stylesheet" href="orig.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Glow Haven</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('about')">About Us</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Glow Guide <span class="bar"></span></a>
+          <ul class="dropdown-content">
+            <li><a href="#" onclick="showSection('hair-care')">Hair Care</a></li>
+            <li><a href="#" onclick="showSection('body-care')">Body Care</a></li>
+            <li><a href="#" onclick="showSection('facial-care')">Facial Care</a></li>
+          </ul>
+        </li>
+        <li><a href="#" onclick="showSection('product-recommendations')">Product Recommendations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section">
+      <h1>Hallur! Welcome to Glow Haven</h1>
+      <p></p> <!-- Pwede mag-include ng images also some brief information about 
+      our website -->
+    </section>
+    <section id="about" class="section" style="display: none;">
+      <h1>About Us</h1>
+      <!-- Will add info sa atin, social links, image and any pwede madagdag-->
+    </section>
+    <section id="hair-care" class="section" style="display: none;">
+      <h1>Hair Care</h1>
+      <p></p> <!-- Almaden -->
+    </section>
+    <section id="body-care" class="section" style="display: none;">
+      <h1>Body Care</h1>
+      <p></p> <!-- Gudalle -->
+    </section>
+    <section id="facial-care" class="section" style="display: none;">
+      <h1>Facial Care</h1>
+      <p></p> <!-- Gudalle -->
+    </section>
+    <section id="product-recommendations" class="section" style="display: none;">
+      <h1>Product Recommendations</h1>
+      <p></p>
+    </section> <!-- Both -->
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Glow Haven. All rights reserved.</p>
+  </footer>
+
+  <script src="orig.js"></script>
+</body>
+</html>
+
+
