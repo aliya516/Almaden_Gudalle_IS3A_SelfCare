@@ -90,13 +90,19 @@ html {
     display: flex;
    justify-content:center;
    align-items: center;
-    position: fixed;
-    margin-top: 1%;
+    /*position: fixed;*/
+    margin-top: 3%;
     width: 80%;
     top: 0;
     left: 10%;
     padding: 0 10px;
-    z-index: 6;
+        position: sticky;
+        top: 0;
+        z-index: 1000; /* Ensures it stays on top of other content */
+        background-color: #fff; /* Background color of the navbar */
+        height: 70px; /* Adjust the height of the navbar */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for better visibility */
+        border-radius: 20px;
   }
 
 .navbar-logo img {
@@ -122,9 +128,7 @@ html {
 
   /* About Section */
   .about-us {
-    margin-top: 10%;
-    padding: 50px 20px;
-    background-color: #f8f8f8;
+     padding: 50px 20px;
   }
   
   .container {
