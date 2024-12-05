@@ -153,7 +153,7 @@ html {
   }
   
   .hero-left h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
   }
   
@@ -180,7 +180,7 @@ html {
   .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #f34949;
+    background-color: #a6827f;
     color: white;
     border-radius: 30px;
     text-decoration: none;
@@ -188,7 +188,7 @@ html {
   }
   
   .btn:hover {
-    background-color: #e22104;
+    background-color: #987185;
   }
   
   .hero-right {
@@ -199,12 +199,12 @@ html {
   .carousel img {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-    width: 80%; /* Ensure the image spans the full width */
+    width: 70%; /* Ensure the image spans the full width */
     height: auto; /* Maintain the aspect ratio of the image */
     max-height: 70vh; /* Limit the height to 70% of the viewport height */
     display: none;
     visibility: hidden;
-  }
+    }
   
   .carousel img.active {
     display: block;
