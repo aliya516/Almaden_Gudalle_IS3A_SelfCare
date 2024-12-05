@@ -1,0 +1,98 @@
+@media (max-width: 768px) {
+    /* Hide the navbar for mobile */
+    .navbar {
+      display: none;
+    }
+    /* Adjust side panel links */
+    .sidepanel a {
+      font-size: 18px; 
+      padding: 10px 15px;
+    }
+
+    .navbar-logo {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+    /* Show the open button for mobile */
+    .openbtn {
+      display: block;
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      z-index: 10;
+    }
+
+    .sidepanel a {
+        font-size: 18px; 
+        padding: 10px 15px;
+      }
+}
+
+/*home*/
+@media (max-width: 768px) {
+    .hero-left h1 {
+      font-size: 3.5rem; /* Make text smaller */
+    }
+  
+    .hero-info li {
+      margin-right: 10px; /* Further reduce space between items */
+    }
+  
+    .icon {
+      font-size: 18px; /* Smaller icon size */
+    }
+  
+    .btn {
+      padding: 6px 14px; /* Smaller button size */
+    }
+  
+    .carousel img {
+      max-height: 50vh; /* Smaller image height on smaller screens */
+    }
+
+    .hero {
+        height: auto; /* Allow the hero content to take up space naturally */
+        margin-top: 0; /* Ensure it’s positioned directly under the navbar */
+      }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-left h1 {
+      font-size: 3rem; /* Make text even smaller */
+    }
+  
+    .hero-info li {
+      margin-right: 5px; /* Further reduce space between items */
+    }
+  
+    .icon {
+      font-size: 16px; /* Smaller icon size */
+    }
+  
+    .btn {
+      padding: 5px 12px; /* Smaller button size */
+    }
+  
+    .carousel img {
+      max-height: 40vh; /* Smaller image height on very small screens */
+    }
+
+    .hero {
+        height: auto; /* Allow the hero content to take up space naturally */
+        margin-top: 0; /* Ensure it’s positioned directly under the navbar */
+      }
+  }
+
+  /*sections*/
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  }
