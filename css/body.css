@@ -53,7 +53,7 @@ h2 {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #e9d5b7;
+  background-color: #e4d5d4;
   overflow-x: hidden;
   padding-top: 80px;
   transition: 0.5s;
@@ -99,7 +99,7 @@ h2 {
 }
 
 .openbtn:hover {
-  color: gray;
+  color: #e4d5d4;
 }
 
 .navbar {

@@ -1,32 +1,30 @@
 function openNav() {
-    document.getElementById("mySidepanel").style.width = "250px";
-    document.querySelector(".openbtn").style.visibility = "hidden";
-    document.querySelector(".closebtn").style.visibility = "visible";
+  document.getElementById("mySidepanel").style.width = "250px";
+  document.querySelector(".openbtn").style.visibility = "hidden";
+  document.querySelector(".closebtn").style.visibility = "visible";
 }
 
 function closeNav() {
-    document.getElementById("mySidepanel").style.width = "0";
-    document.querySelector(".openbtn").style.visibility = "visible";
-    document.querySelector(".closebtn").style.visibility = "hidden";
+  document.getElementById("mySidepanel").style.width = "0";
+  document.querySelector(".openbtn").style.visibility = "visible";
+  document.querySelector(".closebtn").style.visibility = "hidden";
 }
 
 function toggleLogoVisibility() {
-    const logo = document.querySelector('.navbar-logo');
-    const isDesktop = window.matchMedia('(min-width: 769px)').matches;
-  
-    if (isDesktop) {
-      // Hide the logo on desktop
-      logo.style.display = 'none';
-    } else {
-      // Show the logo on mobile
-      logo.style.display = 'flex';
-    }
-  }
-  toggleLogoVisibility();
-  window.addEventListener('resize', toggleLogoVisibility);
+  const logo = document.querySelector('.navbar-logo');
+  const isDesktop = window.matchMedia('(min-width: 769px)').matches;
 
-// Carousel functionality
-// Carousel functionality with transition
+  if (isDesktop) {
+
+    logo.style.display = 'none';
+  } else {
+
+    logo.style.display = 'flex';
+  }
+}
+toggleLogoVisibility();
+window.addEventListener('resize', toggleLogoVisibility);
+
 let currentSlide = 0;
 const slides = document.querySelectorAll(".carousel img");
 
@@ -47,56 +45,54 @@ function nextSlide() {
   showSlide(currentSlide);
 }
 
-// Auto-rotate slides every 2 seconds
 setInterval(nextSlide, 2000);
 
-// Show the first slide by default
 showSlide(currentSlide);
 
-// Listen for click events on all anchor links
 document.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', function(e) {
+  link.addEventListener('click', function (e) {
     e.preventDefault();
-    
-   
+
+
     document.body.classList.add('fade-out');
-    
-   
+
+
     setTimeout(() => {
-      window.location.href = e.target.href;  
-    }, 300);  
+      window.location.href = e.target.href;
+    }, 300);
   })
 });
 
 function scrollLeft() {
   const container = document.getElementById("team-members");
-  container.scrollLeft -= 10; // Adjust the scroll amount as needed
+  container.scrollLeft -= 10;
 }
 
 function scrollRight() {
   const container = document.getElementById("team-members");
-  container.scrollLeft += 10; // Adjust the scroll amount as needed
+  container.scrollLeft += 10;
 }
-// Wait for the page to load
-window.addEventListener('load', function() {
-  // Make sure the page starts with the correct visibility
+
+window.addEventListener('load', function () {
+
   document.querySelector('.page-container').classList.add('visible');
 });
 
-// Add pan effect to links for page transitions
 document.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault(); // Prevent default page navigation
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
 
-    // Add fade-out class to trigger the fade and pan transition
     document.querySelector('.page-container').classList.add('fade-out');
 
-    // After the fade-out effect, navigate to the new page
     setTimeout(() => {
       window.location.href = e.target.href;
-    }, 1000); // This matches the duration of the transition
+    }, 1000);
   });
 });
+
+
+
+
 
 
 
