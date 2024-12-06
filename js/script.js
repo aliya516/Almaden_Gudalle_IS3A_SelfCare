@@ -77,3 +77,27 @@ function scrollRight() {
   const container = document.getElementById("team-members");
   container.scrollLeft += 10; // Adjust the scroll amount as needed
 }
+// Wait for the page to load
+window.addEventListener('load', function() {
+  // Make sure the page starts with the correct visibility
+  document.querySelector('.page-container').classList.add('visible');
+});
+
+// Add pan effect to links for page transitions
+document.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent default page navigation
+
+    // Add fade-out class to trigger the fade and pan transition
+    document.querySelector('.page-container').classList.add('fade-out');
+
+    // After the fade-out effect, navigate to the new page
+    setTimeout(() => {
+      window.location.href = e.target.href;
+    }, 1000); // This matches the duration of the transition
+  });
+});
+
+
+
+
