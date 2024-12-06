@@ -114,8 +114,7 @@ html {
   
   .navbar a:hover {
     color: #987185;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
+    text-decoration: solid;
     text-decoration-color: #423736;
   }
 
