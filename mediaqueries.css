@@ -87,7 +87,7 @@
 
   /*sections*/
 
-  /* Responsive Styles */
+  /* HAIR CARE */
 @media (max-width: 768px) {
   .step-row, .step-row2 {
       flex-direction: column;
@@ -111,7 +111,7 @@
   
 }
 
-
+/*ABOUT*/
   @media (max-width: 768px) {
     .hero h1 {
       font-size: 2rem;
@@ -122,7 +122,7 @@
     }
   }
 
-  /* Responsive Design */
+  /*FOOTER*/
 @media (max-width: 768px) {
   .footer {
       padding: 30px 15px;
