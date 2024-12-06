@@ -117,13 +117,13 @@ html {
     text-decoration: none;
     font-size: 16px;
   }
-  
+
   .navbar a:hover {
     color: #987185;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
+    text-decoration: solid;
     text-decoration-color: #423736;
   }
+  
 
   /* General Styles */
 .bg-grey {
@@ -173,7 +173,7 @@ p {
 }
 
 .step-text .facialstep-number {
-    font-size: 40px;
+    font-size: 90px;
     margin-bottom: 10px;
     position: relative;
 }
@@ -182,11 +182,15 @@ p {
     content: "";
     position: absolute;
     top: 50%;
-    left: 70px;
+    left: 100px;
     width: 100px;
     height: 1px;
     background: #000;
     transform: translateY(-50%);
+}
+
+.h3 {
+    font-size: 50px;
 }
 
 .step-image {
@@ -195,8 +199,35 @@ p {
 }
 
 .step-image img {
+    max-height: 70vh;
     max-width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step-row2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+    flex-direction: row-reverse; /* Added row-reverse */
+}
+
+.step-text .facialstep-number2 {
+    font-size: 80px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.step-text .facialstep-number2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 110px;
+    width: 100px;
+    height: 1px;
+    background: #000;
+    transform: translateY(-50%);
 }
 
 /* Responsive Styles */

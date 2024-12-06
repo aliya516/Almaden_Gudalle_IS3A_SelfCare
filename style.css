@@ -98,10 +98,10 @@ html {
     padding: 0 10px;
         position: sticky;
         top: 0;
-        z-index: 1000; /* Ensures it stays on top of other content */
-        background-color: #fff; /* Background color of the navbar */
-        height: 70px; /* Adjust the height of the navbar */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for better visibility */
+        z-index: 1000; 
+        background-color: #fff; 
+        height: 70px; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
         border-radius: 20px;
   }
 
@@ -124,25 +124,23 @@ html {
     color: #987185;
   }
   
-  /* Underline effect */
   .navbar a::after {
     content: '';
     position: absolute;
-    bottom: -3px; /* Position the underline just below the text */
-    left: 50%; /* Start in the middle */
-    width: 0; /* Initially no width */
-    height: 2px; /* Thickness of the underline */
-    background-color: #a6827f; /* Color of the underline */
-    transition: all 0.4s ease; /* Smooth expansion animation */
-    transform: translateX(-50%); /* Center the underline */
+    bottom: -3px; 
+    left: 50%; 
+    width: 0; 
+    height: 2px; 
+    background-color: #a6827f; 
+    transition: all 0.4s ease; 
+    transform: translateX(-50%);
   }
   
   .navbar a:hover::after {
-    width: 100%; /* Full width of the text */
-    left: 0; /* Expand from the center to edges */
-    transform: translateX(0); /* Reset transform */
+    width: 100%; 
+    left: 0;
+    transform: translateX(0); 
   }
-  /* Initial text styles */
 
   /*home page*/
   .hero {
