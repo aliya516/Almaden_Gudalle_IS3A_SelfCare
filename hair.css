@@ -124,3 +124,92 @@ html {
     text-underline-offset: 1rem;
     text-decoration-color: #423736;
   }
+
+  /* General Styles */
+.bg-grey {
+    background-color: #f7f8f9;
+}
+
+.section-padding {
+    padding: 50px 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.facial-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.facial-heading-section span {
+    color: #000;
+}
+
+h2, h3, h4 {
+    color: #a6827f;
+}
+
+p {
+    color: #333;
+}
+
+/* Step Row Styles */
+.step-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.step-text {
+    flex: 1;
+    position: relative;
+    padding: 20px;
+}
+
+.step-text .facialstep-number {
+    font-size: 40px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.step-text .facialstep-number::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 70px;
+    width: 100px;
+    height: 1px;
+    background: #000;
+    transform: translateY(-50%);
+}
+
+.step-image {
+    flex: 1;
+    text-align: center;
+}
+
+.step-image img {
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .step-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .step-text .facialstep-number::after {
+        display: none;
+    }
+
+    .step-text {
+        padding: 0;
+    }
+}
