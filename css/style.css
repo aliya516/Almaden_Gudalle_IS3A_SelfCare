@@ -1,13 +1,13 @@
 html {
-  overflow-x: hidden;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  color: #000;
-  background-color: white; /*#f4ede5*/
-}
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    color: #000;
+    background-color: white; /*#f4ede5*/
+  }
 
 body {
   opacity: 1;
@@ -17,28 +17,28 @@ body {
 body.fade-out {
   opacity: 0;
 }
-
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
-}
-
-h1,
-h2 {
-  font-weight: 700;
-}
-/* Mobile Mode - Menu Side Panel */
+  
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+  }
+  
+  h1,
+  h2 {
+    font-weight: 700;
+  }
+  /* Mobile Mode - Menu Side Panel */
 .sidepanel {
   height: 100%;
   width: 0;
@@ -122,7 +122,7 @@ h2 {
   position: relative;
   display: inline-block;
   padding: 14px 20px;
-  /* margin: 0 15px;*/
+ /* margin: 0 15px;*/
   margin-left: 1.5%;
   color: #000;
   text-decoration: none;
@@ -157,17 +157,17 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 130px);
+  height: calc(100vh - 130px); /* Adjust height below the navbar */
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 20px; /* Reserve space for the navbar */
 }
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Place sections side by side */
   width: 100%;
   max-width: 1200px;
-  align-items: center;
+  align-items: center; /* Vertically center the content */
 }
 
 .row {
@@ -224,15 +224,15 @@ h2 {
 
 .hero-right {
   flex: 1;
-  text-align: center;
+  text-align: center; /* Center align the image */
 }
 
 .carousel img {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-  width: 70%;
-  height: auto;
-  max-height: 70vh;
+  width: 70%; /* Ensure the image spans the full width */
+  height: auto; /* Maintain the aspect ratio of the image */
+  max-height: 70vh; /* Limit the height to 70% of the viewport height */
   display: none;
   visibility: hidden;
   margin-left: 15%;
@@ -244,6 +244,7 @@ h2 {
   visibility: visible;
 }
 
+/* Footer Styles */
 .footer {
   background-color: #f8f9fa;
   padding: 10px 0;
@@ -259,7 +260,7 @@ h2 {
 }
 
 .footer-logo {
-  width: 200px;
+  width: 200px; /* Adjust the logo size */
   height: auto;
 }
 

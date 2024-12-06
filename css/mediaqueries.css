@@ -1,0 +1,199 @@
+@media (max-width: 992px) {
+    /* Hide the navbar for mobile */
+    .navbar {
+      display: none;
+    }
+    /* Adjust side panel links */
+    .sidepanel a {
+      font-size: 18px; 
+      padding: 10px 15px;
+    }
+
+    .navbar-logo {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+    /* Show the open button for mobile */
+    .openbtn {
+      display: block;
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      z-index: 10;
+    }
+
+    .sidepanel a {
+        font-size: 18px; 
+        padding: 10px 15px;
+      }
+}
+
+/*home*/
+@media (max-width: 768px) {
+    .hero-left h1 {
+      font-size: 3.5rem; /* Make text smaller */
+    }
+  
+    .hero-info li {
+      margin-right: 10px; /* Further reduce space between items */
+    }
+  
+    .icon {
+      font-size: 18px; /* Smaller icon size */
+    }
+  
+    .btn {
+      padding: 6px 14px; /* Smaller button size */
+    }
+  
+    .carousel img {
+      max-height: 50vh; /* Smaller image height on smaller screens */
+    }
+
+    .hero {
+        height: auto; /* Allow the hero content to take up space naturally */
+        margin-top: 0; /* Ensure it’s positioned directly under the navbar */
+      }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-left h1 {
+      font-size: 3rem; /* Make text even smaller */
+    }
+  
+    .hero-info li {
+      margin-right: 5px; /* Further reduce space between items */
+    }
+  
+    .icon {
+      font-size: 16px; /* Smaller icon size */
+    }
+  
+    .btn {
+      padding: 5px 12px; /* Smaller button size */
+    }
+  
+    .carousel img {
+      max-height: 40vh; /* Smaller image height on very small screens */
+    }
+
+    .hero {
+        height: auto; /* Allow the hero content to take up space naturally */
+        margin-top: 0; /* Ensure it’s positioned directly under the navbar */
+      }
+  }
+
+  /*sections*/
+
+  /* HAIR CARE */
+@media (max-width: 768px) {
+  .step-row, .step-row2 {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .step-text .facialstep-number::after {
+      display: none;
+  }
+
+  .step-text .facialstep-number2::after {
+      display: none;
+  }
+
+  .step-text .facialstep-number5::after {
+      display: none;
+  }
+  .step-text {
+      padding: 0;
+  }
+  
+}
+
+/*ABOUT*/
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .about-left {
+      padding-bottom: 20px; 
+    }
+  
+    .about-right {
+      padding: 0; 
+    }
+  
+    .small-pictures {
+      flex-direction: row;
+      margin-top: 30px;
+    }
+  
+    .small-img {
+      margin-bottom: 20px; 
+    }
+  
+    .small-img img {
+      max-width: 120px;
+    }
+  }
+  /* team*/
+@media (max-width: 768px) {
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .team-member {
+    width: 220px;
+    margin-bottom: 20px;
+  }
+
+  .name {
+    font-size: 1.1em;
+  }
+
+  .role {
+    font-size: 0.9em;
+  }
+
+  .social-icons a {
+    font-size: 1.3em;
+  }
+
+  .photo {
+    width: 150px; /* Reduce photo size */
+    height: 150px; /* Reduce photo size */
+  }
+
+  .team h2 {
+    font-size: 1.5rem; /* Smaller heading */
+  }
+}
+
+/*recos2*/
+  /*FOOTER*/
+@media (max-width: 768px) {
+  .footer {
+      padding: 30px 15px;
+  }
+  
+  .footer-logo {
+      width: 120px; /* Adjust logo size for mobile */
+  }
+}
+
+ 

@@ -1,0 +1,351 @@
+html {
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    color: #000;
+    background-color: white; /*#f4ede5*/
+  }
+
+  /* Initial state - full opacity */
+body {
+  opacity: 1;
+  transition: opacity 0.5s ease-out; /* Set the duration and easing */
+}
+
+/* Fade out effect when leaving the page */
+body.fade-out {
+  opacity: 0;
+}
+  
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+  }
+  
+  h1,
+  h2 {
+    font-weight: 700;
+  }
+  /* Mobile Mode - Menu Side Panel */
+.sidepanel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #e9d5b7;
+    overflow-x: hidden;
+    padding-top: 80px;
+    transition: 0.5s;
+    z-index: 3;
+  }
+  
+  .sidepanel a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 3%;
+    color: #423736;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: white;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 40px;
+    visibility: hidden;
+    color: white;
+    z-index: 4;
+  }
+  
+  .openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    border: none;
+    background: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    display: none;
+  }
+  
+  .openbtn:hover {
+    color: gray;
+  }
+  
+  /* Desktop Mode - Nav Bar */
+  .navbar {
+    display: flex;
+   justify-content:center;
+   align-items: center;
+    /*position: fixed;*/
+    margin-top: 3%;
+    width: 80%;
+    top: 0;
+    left: 10%;
+    padding: 0 10px;
+        position: sticky;
+        top: 0;
+        z-index: 1000; /* Ensures it stays on top of other content */
+        background-color: #fff; /* Background color of the navbar */
+        height: 70px; /* Adjust the height of the navbar */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for better visibility */
+        border-radius: 20px;
+  }
+
+.navbar-logo img {
+    height: 150px; /* Adjust as needed */
+    width: auto;
+  }
+  .navbar a {
+    position: relative;
+    display: inline-block;
+    padding: 14px 20px;
+   /* margin: 0 15px;*/
+    margin-left: 1.5%;
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #987185;
+  }
+  
+  .navbar a::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #a6827f;
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+  }
+  
+  .navbar a:hover::after {
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+  }
+  
+
+  /* About Section */
+  .about-us {
+     padding: 50px 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Left Section Styling (Image) */
+  .about-left {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .about-image {
+    width: 100%;
+    max-height: 70vh;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  /* Right Section Styling (Text) */
+  .about-right {
+    flex: 1;
+    padding-left: 30px;
+    font-size: 2 rem;
+  }
+  
+  .about-right h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 4px solid #ccc;
+  }
+  
+  .about-right p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Small Pictures Styling */
+  .small-pictures {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .small-img {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .small-img img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .small-img h5 {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .small-img a {
+    display: inline-block; /* Ensures clickable area wraps the image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .small-img a:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  }
+  
+/* Add Team Section Styles */
+.team {
+  padding: 50px 20px;
+  background-color: white;
+  max-height: 100vh;
+}
+
+.team h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: left;
+  padding-left: 20px;
+  border-left: 4px solid #ccc;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.photo {
+  width: 200px; /* Increased size of the square */
+  height: 200px; /* Increased size of the square */
+  margin: 0 auto 15px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 4px solid #a6827f; /* Added border */
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.role {
+  font-size: 1em;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 1.5em;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo-container {
+  margin-bottom: 10px;
+}
+
+.footer-logo {
+  width: 200px; /* Adjust the logo size */
+  height: auto;
+}
+
+.footer-text {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.footer-text p {
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  font-size: 1rem;
+  color: #777;
+  margin-top: 20px;
+}
+
+blockquote {
+  font-style: italic;
+  color: #555;
+  margin: 10px 0;
+  padding-left: 20px;
+}

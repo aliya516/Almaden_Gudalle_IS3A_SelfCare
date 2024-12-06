@@ -1,8 +1,4 @@
-body,
-h1,
-h2,
-h3,
-p {
+body, h1, h2, h3, p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -35,6 +31,7 @@ body.fade-out {
 
 .bg-grey {
   background-color: #f7f8f9;
+  ;
 }
 
 .section-padding {
@@ -44,6 +41,7 @@ body.fade-out {
 .text-center {
   text-align: center;
 }
+
 
 /* Facial Guide Section */
 .facial-steps {
@@ -58,8 +56,7 @@ body.fade-out {
   gap: 20px;
 }
 
-.step-content,
-.step-image {
+.step-content, .step-image {
   flex: 1;
 }
 
@@ -73,8 +70,7 @@ body.fade-out {
   margin-bottom: 10px;
 }
 
-h3,
-h2 {
+h3, h2{
   color: #a6827f;
 }
 
