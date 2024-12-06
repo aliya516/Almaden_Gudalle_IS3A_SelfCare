@@ -102,7 +102,7 @@
       display: none;
   }
 
-  .step-text .facialstep-number3::after {
+  .step-text .facialstep-number5::after {
       display: none;
   }
   .step-text {
@@ -121,6 +121,41 @@
       font-size: 1rem;
     }
   }
+
+  /* team*/
+@media (max-width: 768px) {
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .team-member {
+    width: 220px;
+    margin-bottom: 20px;
+  }
+
+  .name {
+    font-size: 1.1em;
+  }
+
+  .role {
+    font-size: 0.9em;
+  }
+
+  .social-icons a {
+    font-size: 1.3em;
+  }
+
+  .photo {
+    width: 150px; /* Reduce photo size */
+    height: 150px; /* Reduce photo size */
+  }
+
+  .team h2 {
+    font-size: 1.5rem; /* Smaller heading */
+  }
+}
 
   /*FOOTER*/
 @media (max-width: 768px) {

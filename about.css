@@ -342,32 +342,6 @@ body.fade-out {
   text-decoration: none;
 }
 
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .team-members {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .team-member {
-    width: 220px;
-  }
-
-  .name {
-    font-size: 1.1em;
-  }
-
-  .role {
-    font-size: 0.9em;
-  }
-
-  .social-icons a {
-    font-size: 1.3em;
-  }
-}
-
 /* Footer Styles */
 .footer {
   background-color: #f8f9fa;
