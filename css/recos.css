@@ -1,15 +1,15 @@
 html {
-    overflow-x: hidden;
-  }
-  
-  body {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    color: #000;
-    background-color: white; /*#f4ede5*/
-  }
+  overflow-x: hidden;
+}
 
-  /* Initial state - full opacity */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: #000;
+  background-color: white; /*#f4ede5*/
+}
+
+/* Initial state - full opacity */
 body {
   opacity: 1;
   transition: opacity 0.5s ease-out; /* Set the duration and easing */
@@ -19,244 +19,242 @@ body {
 body.fade-out {
   opacity: 0;
 }
-  
-  .h1,
-  .h2,
-  .h3,
-  .h4,
-  .h5,
-  .h6,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 400;
-  }
-  
-  h1,
-  h2 {
-    font-weight: 700;
-    color: #a6827f;
-  }
-  /* Mobile Mode - Menu Side Panel */
-.sidepanel {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #e9d5b7;
-    overflow-x: hidden;
-    padding-top: 80px;
-    transition: 0.5s;
-    z-index: 3;
-  }
-  
-  .sidepanel a {
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 40px;
-    font-weight: 100;
-    margin-bottom: 3%;
-    color: #423736;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidepanel a:hover {
-    color: white;
-  }
-  
-  .sidepanel .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 40px;
-    visibility: hidden;
-    color: white;
-    z-index: 4;
-  }
-  
-  .openbtn {
-    font-size: 30px;
-    cursor: pointer;
-    color: black;
-    border: none;
-    background: none;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 5;
-    display: none;
-  }
-  
-  .openbtn:hover {
-    color: gray;
-  }
-  
-  /* Desktop Mode - Nav Bar */
-  .navbar {
-    display: flex;
-   justify-content:center;
-   align-items: center;
-    /*position: fixed;*/
-    margin-top: 3%;
-    width: 80%;
-    top: 0;
-    left: 10%;
-    padding: 0 10px;
-        position: sticky;
-        top: 0;
-        z-index: 1000; /* Ensures it stays on top of other content */
-        background-color: #fff; /* Background color of the navbar */
-        height: 70px; /* Adjust the height of the navbar */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for better visibility */
-        border-radius: 20px;
-  }
 
-.navbar-logo img {
-    height: 150px; /* Adjust as needed */
-    width: auto;
-  }
-  .navbar a {
-    position: relative;
-    display: inline-block;
-    padding: 14px 20px;
-   /* margin: 0 15px;*/
-    margin-left: 1.5%;
-    color: #000;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar a:hover {
-    color: #987185;
-  }
-  
-  .navbar a::after {
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background-color: #a6827f;
-    transition: all 0.4s ease;
-    transform: translateX(-50%);
-  }
-  
-  .navbar a:hover::after {
-    width: 100%;
-    left: 0;
-    transform: translateX(0);
-  }
-  
-/* Add Team Section Styles */
-.team {
-    padding: 50px 20px;
-    background-color: white;
-    max-height: 100vh;
-  }
-  
-  .team h2 {
-    font-size: 2rem;
-    margin-bottom: 40px;
-    text-align: left;
-    padding-left: 20px;
-    border-left: 4px solid #ccc;
-  }
-  
-  .team-members {
-        display: flex;
-        overflow-x: scroll; /* Enables horizontal scrolling */
-        gap: 30px; /* Space between items */
-        scroll-behavior: smooth; /* Smooth scrolling effect */
-        padding-bottom: 10px; /* Space below items */
-
-  }
-
-  .scroll-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  
-  .scroll-buttons button {
-    background-color: #a6827f; /* Matches your design */
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .scroll-buttons button:hover {
-    background-color: #987185; /* Slightly darker for hover effect */
-  }
-
-
-  .team-members::-webkit-scrollbar {
-    height: 8px; /* Height of the scrollbar */
-    background: #f4f4f4; /* Background color of the scrollbar track */
-  }
-
-  .team-members::-webkit-scrollbar-thumb {
-    background: #a6827f; /* Color of the scrollbar thumb */
-    border-radius: 10px; /* Rounded scrollbar thumb */
-  }
-  
-  .team-members::-webkit-scrollbar-thumb:hover {
-    background: #987185; /* Darker shade on hover */
-  }
-  
-  .team-member {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    width: 250px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .photo {
-    width: 200px; /* Increased size of the square */
-    height: 200px; /* Increased size of the square */
-    margin: 0 auto 15px;
-    overflow: hidden;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 4px solid #a6827f; /* Added border */
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .team-member:hover .photo {
-    transform: scale(1.0) translateY(-20px);
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
 }
 
-  .name {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 5px;
-  }
-  
-  .role {
-    font-size: 1em;
-    color: #777;
-    margin-bottom: 15px;
-  }
-  .role,
+h1,
+h2 {
+  font-weight: 700;
+  color: #a6827f;
+}
+/* Mobile Mode - Menu Side Panel */
+.sidepanel {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #e9d5b7;
+  overflow-x: hidden;
+  padding-top: 80px;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.sidepanel a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 100;
+  margin-bottom: 3%;
+  color: #423736;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: white;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 40px;
+  visibility: hidden;
+  color: white;
+  z-index: 4;
+}
+
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  color: black;
+  border: none;
+  background: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  display: none;
+}
+
+.openbtn:hover {
+  color: gray;
+}
+
+/* Desktop Mode - Nav Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*position: fixed;*/
+  margin-top: 3%;
+  width: 80%;
+  top: 0;
+  left: 10%;
+  padding: 0 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures it stays on top of other content */
+  background-color: #fff; /* Background color of the navbar */
+  height: 70px; /* Adjust the height of the navbar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for better visibility */
+  border-radius: 20px;
+}
+
+.navbar-logo img {
+  height: 150px; /* Adjust as needed */
+  width: auto;
+}
+.navbar a {
+  position: relative;
+  display: inline-block;
+  padding: 14px 20px;
+  /* margin: 0 15px;*/
+  margin-left: 1.5%;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #987185;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #a6827f;
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+}
+
+.navbar a:hover::after {
+  width: 100%;
+  left: 0;
+  transform: translateX(0);
+}
+
+/* Add Team Section Styles */
+.team {
+  padding: 50px 20px;
+  background-color: white;
+  max-height: 100vh;
+}
+
+.team h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: left;
+  padding-left: 20px;
+  border-left: 4px solid #ccc;
+}
+
+.team-members {
+  display: flex;
+  overflow-x: scroll; /* Enables horizontal scrolling */
+  gap: 30px; /* Space between items */
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+  padding-bottom: 10px; /* Space below items */
+}
+
+.scroll-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.scroll-buttons button {
+  background-color: #a6827f; /* Matches your design */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-buttons button:hover {
+  background-color: #987185; /* Slightly darker for hover effect */
+}
+
+.team-members::-webkit-scrollbar {
+  height: 8px; /* Height of the scrollbar */
+  background: #f4f4f4; /* Background color of the scrollbar track */
+}
+
+.team-members::-webkit-scrollbar-thumb {
+  background: #a6827f; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded scrollbar thumb */
+}
+
+.team-members::-webkit-scrollbar-thumb:hover {
+  background: #987185; /* Darker shade on hover */
+}
+
+.team-member {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.photo {
+  width: 200px; /* Increased size of the square */
+  height: 200px; /* Increased size of the square */
+  margin: 0 auto 15px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 4px solid #a6827f; /* Added border */
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.team-member:hover .photo {
+  transform: scale(1) translateY(-20px);
+}
+
+.name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.role {
+  font-size: 1em;
+  color: #777;
+  margin-bottom: 15px;
+}
+.role,
 span {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -265,13 +263,13 @@ span {
 .team-member:hover span {
   opacity: 1;
 }
-  .social-icons a {
-    margin: 0 10px;
-    font-size: 1.5em;
-    color: #333;
-    text-decoration: none;
-  }
-  
+.social-icons a {
+  margin: 0 10px;
+  font-size: 1.5em;
+  color: #333;
+  text-decoration: none;
+}
+
 /* Footer Styles */
 .footer {
   background-color: #f8f9fa;
@@ -316,24 +314,23 @@ blockquote {
 }
 
 @media (max-width: 768px) {
-    .team-members {
-        flex-direction: column; /* Switch to vertical scrolling */
-        overflow-y: auto; /* Enable vertical scrolling */
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-        max-height: 500px; /* Optional: limit the height */
-        padding-right: 10px; /* Add padding for scrollbar */
-    }
-  
-    .team-members::-webkit-scrollbar {
-        width: 8px; /* Vertical scrollbar width */
-    }
-    
-    .team-members::-webkit-scrollbar-thumb {
-        background: #a6827f;
-    }
-  
-    .team-member {
-        width: 100%; /* Full width for vertical layout */
-    }
+  .team-members {
+    flex-direction: column; /* Switch to vertical scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    max-height: 500px; /* Optional: limit the height */
+    padding-right: 10px; /* Add padding for scrollbar */
   }
 
+  .team-members::-webkit-scrollbar {
+    width: 8px; /* Vertical scrollbar width */
+  }
+
+  .team-members::-webkit-scrollbar-thumb {
+    background: #a6827f;
+  }
+
+  .team-member {
+    width: 100%; /* Full width for vertical layout */
+  }
+}

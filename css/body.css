@@ -105,15 +105,15 @@ h2 {
   padding: 0 10px;
   position: sticky;
   top: 0;
-  z-index: 1000; 
+  z-index: 1000;
   background-color: #fff;
-  height: 70px; 
+  height: 70px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
 
 .navbar-logo img {
-  height: 150px; 
+  height: 150px;
   width: auto;
 }
 
@@ -310,7 +310,7 @@ p {
 }
 
 .footer-logo {
-  width: 200px; 
+  width: 200px;
   height: auto;
 }
 
