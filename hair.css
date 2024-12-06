@@ -261,6 +261,25 @@ p {
     transform: translateY(-50%);
 }
 
+/*PAGE 10*/
+.step-text .facialstep-number5 {
+    font-size: 90px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.step-text .facialstep-number5::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 100px;
+    height: 1px;
+    background: #000;
+    transform: translateY(-50%);
+}
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .step-row, .step-row2 {
