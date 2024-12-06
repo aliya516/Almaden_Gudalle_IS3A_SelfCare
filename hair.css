@@ -172,7 +172,7 @@ p {
 }
 
 .step-text .facialstep-number {
-    font-size: 40px;
+    font-size: 90px;
     margin-bottom: 10px;
     position: relative;
 }
@@ -181,11 +181,15 @@ p {
     content: "";
     position: absolute;
     top: 50%;
-    left: 70px;
+    left: 100px;
     width: 100px;
     height: 1px;
     background: #000;
     transform: translateY(-50%);
+}
+
+.h3 {
+    font-size: 50px;
 }
 
 .step-image {
