@@ -22,14 +22,8 @@ function toggleLogoVisibility() {
       logo.style.display = 'flex';
     }
   }
-  
-  // Initial check
   toggleLogoVisibility();
-  
-  // Listen for window resize events
   window.addEventListener('resize', toggleLogoVisibility);
-
-/*home page*/
 
 // Carousel functionality
 // Carousel functionality with transition
@@ -58,3 +52,19 @@ setInterval(nextSlide, 2000);
 
 // Show the first slide by default
 showSlide(currentSlide);
+
+// Listen for click events on all anchor links
+document.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+   
+    document.body.classList.add('fade-out');
+    
+   
+    setTimeout(() => {
+      window.location.href = e.target.href;  
+    }, 500);  
+  });
+});
+

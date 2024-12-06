@@ -1,35 +1,47 @@
 html {
-  overflow-x: hidden;
-}
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    color: #000;
+    background-color: white; /*#f4ede5*/
+  }
 
+  
+/* Initial state - full opacity */
 body {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  color: #000;
-  background-color: white; /*#f4ede5*/
+  opacity: 1;
+  transition: opacity 1s ease-out; /* Set the duration and easing */
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
+/* Fade out effect when leaving the page */
+body.fade-out {
+  opacity: 0;
 }
-
-h1,
-h2 {
-  font-weight: 700;
-}
-/* Mobile Mode - Menu Side Panel */
+  
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+  }
+  
+  h1,
+  h2 {
+    font-weight: 700;
+  }
+  /* Mobile Mode - Menu Side Panel */
 .sidepanel {
   height: 100%;
   width: 0;
