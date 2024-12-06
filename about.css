@@ -120,22 +120,40 @@ body.fade-out {
     height: 150px; /* Adjust as needed */
     width: auto;
   }
-
   .navbar a {
-    margin-left: 1.5%;
-    color: #423736;
+    position: relative;
+    display: inline-block;
     padding: 14px 20px;
+   /* margin: 0 15px;*/
+    margin-left: 1.5%;
+    color: #000;
     text-decoration: none;
     font-size: 16px;
+    transition: color 0.3s ease;
   }
   
   .navbar a:hover {
     color: #987185;
-    text-decoration: underline;
-    text-underline-offset: 1px;
-    text-decoration-color: #423736;
   }
-
+  
+  .navbar a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #a6827f;
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+  }
+  
+  .navbar a:hover::after {
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+  }
+  
 
   /* About Section */
   .about-us {
