@@ -68,3 +68,12 @@ document.querySelectorAll('a').forEach(link => {
   })
 });
 
+function scrollLeft() {
+  const container = document.getElementById("team-members");
+  container.scrollLeft -= 10; // Adjust the scroll amount as needed
+}
+
+function scrollRight() {
+  const container = document.getElementById("team-members");
+  container.scrollLeft += 10; // Adjust the scroll amount as needed
+}
