@@ -47,6 +47,7 @@ body.fade-out {
 
 /* Facial Guide Section */
 .facial-steps {
+  margin-top: 20%;
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
