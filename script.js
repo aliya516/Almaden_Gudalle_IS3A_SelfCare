@@ -64,7 +64,7 @@ document.querySelectorAll('a').forEach(link => {
    
     setTimeout(() => {
       window.location.href = e.target.href;  
-    }, 500);  
-  });
+    }, 300);  
+  })
 });
 

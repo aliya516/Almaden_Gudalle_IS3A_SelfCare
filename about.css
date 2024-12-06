@@ -12,7 +12,7 @@ html {
   /* Initial state - full opacity */
 body {
   opacity: 1;
-  transition: opacity 1s ease-out; /* Set the duration and easing */
+  transition: opacity 0.5s ease-out; /* Set the duration and easing */
 }
 
 /* Fade out effect when leaving the page */
@@ -240,41 +240,6 @@ body.fade-out {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
   }
   
-
-  @media screen and (max-width: 900px) {
-    /* Stack about content vertically */
-    .about-content {
-      flex-direction: column;
-      align-items: center; /* Center items */
-      text-align: center; /* Center-align text */
-    }
-  
-    /* Adjust left section (image) */
-    .about-left {
-      padding-bottom: 20px; /* Add spacing between sections */
-    }
-  
-    /* Adjust right section (text) */
-    .about-right {
-      padding: 0; /* Remove padding to center-align text */
-    }
-  
-    /* Ensure small pictures are stacked below */
-    .small-pictures {
-      flex-direction: row; /* Stack items vertically */
-      margin-top: 30px; /* Adjust spacing */
-    }
-  
-    .small-img {
-      margin-bottom: 20px; /* Add spacing between items */
-    }
-  
-    /* Resize smaller images for better fit */
-    .small-img img {
-      max-width: 120px;
-    }
-  }
-
 /* Add Team Section Styles */
 .team {
   padding: 50px 20px;

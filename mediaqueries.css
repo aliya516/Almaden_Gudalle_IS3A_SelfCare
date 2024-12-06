@@ -121,7 +121,34 @@
       font-size: 1rem;
     }
   }
-
+  @media screen and (max-width: 900px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .about-left {
+      padding-bottom: 20px; 
+    }
+  
+    .about-right {
+      padding: 0; 
+    }
+  
+    .small-pictures {
+      flex-direction: row;
+      margin-top: 30px;
+    }
+  
+    .small-img {
+      margin-bottom: 20px; 
+    }
+  
+    .small-img img {
+      max-width: 120px;
+    }
+  }
   /* team*/
 @media (max-width: 768px) {
   .team-members {
