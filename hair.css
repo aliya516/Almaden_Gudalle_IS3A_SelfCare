@@ -1,0 +1,126 @@
+html {
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    color: #000;
+    background-color: white; /*#f4ede5*/
+  }
+  
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+  }
+  
+  h1,
+  h2 {
+    font-weight: 700;
+  }
+  /* Mobile Mode - Menu Side Panel */
+.sidepanel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #e9d5b7;
+    overflow-x: hidden;
+    padding-top: 80px;
+    transition: 0.5s;
+    z-index: 3;
+  }
+  
+  .sidepanel a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 3%;
+    color: #423736;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: white;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 40px;
+    visibility: hidden;
+    color: white;
+    z-index: 4;
+  }
+  
+  .openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    border: none;
+    background: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    display: none;
+  }
+  
+  .openbtn:hover {
+    color: gray;
+  }
+  
+  /* Desktop Mode - Nav Bar */
+  .navbar {
+    display: flex;
+   justify-content:center;
+   align-items: center;
+    /*position: fixed;*/
+    margin-top: 3%;
+    width: 80%;
+    top: 0;
+    left: 10%;
+    padding: 0 10px;
+        position: sticky;
+        top: 0;
+        z-index: 1000; /* Ensures it stays on top of other content */
+        background-color: #fff; /* Background color of the navbar */
+        height: 70px; /* Adjust the height of the navbar */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for better visibility */
+        border-radius: 20px;
+  }
+
+.navbar-logo img {
+    height: 150px; /* Adjust as needed */
+    width: auto;
+  }
+
+  .navbar a {
+    margin-left: 1.5%;
+    color: #423736;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .navbar a:hover {
+    color: #987185;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: #423736;
+  }
