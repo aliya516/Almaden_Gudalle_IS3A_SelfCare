@@ -204,19 +204,11 @@ html {
     max-height: 70vh; /* Limit the height to 70% of the viewport height */
     display: none;
     visibility: hidden;
+    margin-left: 15%;
     }
   
   .carousel img.active {
     display: block;
     opacity: 1;
     visibility: visible;
-  }
-
-  /*about*/
-  /* General Styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
+  } 
