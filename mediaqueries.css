@@ -87,6 +87,31 @@
 
   /*sections*/
 
+  /* Responsive Styles */
+@media (max-width: 768px) {
+  .step-row, .step-row2 {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .step-text .facialstep-number::after {
+      display: none;
+  }
+
+  .step-text .facialstep-number2::after {
+      display: none;
+  }
+
+  .step-text .facialstep-number3::after {
+      display: none;
+  }
+  .step-text {
+      padding: 0;
+  }
+  
+}
+
+
   @media (max-width: 768px) {
     .hero h1 {
       font-size: 2rem;
@@ -96,5 +121,16 @@
       font-size: 1rem;
     }
   }
+
+  /* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+      padding: 30px 15px;
+  }
+  
+  .footer-logo {
+      width: 120px; /* Adjust logo size for mobile */
+  }
+}
 
  
