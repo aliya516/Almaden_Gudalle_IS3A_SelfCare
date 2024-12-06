@@ -11,6 +11,17 @@ body {
   background-color: #f7f8f9;
 }
 
+/* Initial state - full opacity */
+body {
+  opacity: 1;
+  transition: opacity 1s ease-out; /* Set the duration and easing */
+}
+
+/* Fade out effect when leaving the page */
+body.fade-out {
+  opacity: 0;
+}
+
 /* Layout Styles */
 .facial-container {
   max-width: 1200px;

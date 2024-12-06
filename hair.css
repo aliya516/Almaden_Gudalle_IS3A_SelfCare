@@ -8,6 +8,17 @@ html {
     color: #000;
     background-color: white; /*#f4ede5*/
   }
+ 
+/* Initial state - full opacity */
+body {
+    opacity: 1;
+    transition: opacity 1s ease-out; /* Set the duration and easing */
+  }
+  
+  /* Fade out effect when leaving the page */
+  body.fade-out {
+    opacity: 0;
+  }
   
   .h1,
   .h2,
@@ -273,3 +284,5 @@ p {
     }
     
 }
+
+  
