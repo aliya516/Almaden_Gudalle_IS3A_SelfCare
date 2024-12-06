@@ -194,6 +194,8 @@ body.fade-out {
   .about-right h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 4px solid #ccc;
   }
   
   .about-right p {
@@ -272,7 +274,100 @@ body.fade-out {
       max-width: 120px;
     }
   }
-  
+
+/* Add Team Section Styles */
+.team {
+  padding: 50px 20px;
+  background-color: white;
+  max-height: 100vh;
+}
+
+.team h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: left;
+  padding-left: 20px;
+  border-left: 4px solid #ccc;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.photo {
+  width: 200px; /* Increased size of the square */
+  height: 200px; /* Increased size of the square */
+  margin: 0 auto 15px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 4px solid #a6827f; /* Added border */
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.role {
+  font-size: 1em;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 1.5em;
+  color: #333;
+  text-decoration: none;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .team-member {
+    width: 220px;
+  }
+
+  .name {
+    font-size: 1.1em;
+  }
+
+  .role {
+    font-size: 0.9em;
+  }
+
+  .social-icons a {
+    font-size: 1.3em;
+  }
+}
+
 /* Footer Styles */
 .footer {
   background-color: #f8f9fa;
@@ -315,4 +410,3 @@ blockquote {
   margin: 10px 0;
   padding-left: 20px;
 }
-
