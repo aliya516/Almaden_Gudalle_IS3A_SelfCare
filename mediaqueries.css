@@ -117,3 +117,9 @@
       max-width: 1140px;
     }
   }
+
+  @media (max-width: 800px) {
+    nav {
+        padding: 0.5em;    /* Adjust padding for smaller screens */
+    }
+}
