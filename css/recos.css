@@ -317,6 +317,7 @@ blockquote {
   padding-left: 20px;
 }
 
+
 @media (max-width: 768px) {
   .team-members {
     flex-direction: column;
