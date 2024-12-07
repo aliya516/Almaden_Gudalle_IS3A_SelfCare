@@ -137,10 +137,11 @@ blockquote {
     justify-content: space-between;
     align-items: center;
   }
-
+ 
   .step:nth-child(even) {
     flex-direction: row-reverse;
   }
+<<<<<<< HEAD
   .step-image {
     align-items: center;
   }
@@ -154,3 +155,6 @@ blockquote {
   text-align: center;
 }
 }
+=======
+}
+>>>>>>> b22a2070ad6f2725877561ed5d06ca355159d01d
