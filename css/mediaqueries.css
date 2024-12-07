@@ -32,11 +32,9 @@
 
 @media (min-width: 992px) {
   .sidepanel {
-    display:none;
+    display: none;
   }
 }
-
-
 
 /*home*/
 @media (max-width: 768px) {
@@ -108,6 +106,10 @@
   }
 
   .step-text .facialstep-number2::after {
+    display: none;
+  }
+
+  .step-text .facialstep-number3::after {
     display: none;
   }
 

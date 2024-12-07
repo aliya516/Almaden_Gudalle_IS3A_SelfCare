@@ -317,6 +317,14 @@ blockquote {
   padding-left: 20px;
 }
 
+@media (max-width: 1920px) {
+  .team-members {
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+}
+
 @media (max-width: 768px) {
   .team-members {
     flex-direction: column;
