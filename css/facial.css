@@ -137,7 +137,7 @@ blockquote {
     justify-content: space-between;
     align-items: center;
   }
-
+ 
   .step:nth-child(even) {
     flex-direction: row-reverse;
   }
