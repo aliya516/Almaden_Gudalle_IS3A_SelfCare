@@ -141,4 +141,16 @@ blockquote {
   .step:nth-child(even) {
     flex-direction: row-reverse;
   }
+  .step-image {
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .page-container {
+    flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 }
