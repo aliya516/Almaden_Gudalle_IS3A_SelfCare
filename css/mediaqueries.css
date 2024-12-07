@@ -51,7 +51,8 @@
   }
 
   .btn {
-    padding: 6px 14px; /* Smaller button size */
+    padding: 4px 12px; /* Smaller button size */
+    font-size: 14px;
   }
 
   .carousel img {
@@ -66,7 +67,8 @@
 
 @media (max-width: 480px) {
   .hero-left h1 {
-    font-size: 3rem; /* Make text even smaller */
+    font-size: 3rem; /*
+     Make text even smaller */
   }
 
   .hero-info li {
@@ -78,7 +80,8 @@
   }
 
   .btn {
-    padding: 5px 12px; /* Smaller button size */
+    padding: 4px 8px; /* Smaller button size */
+    font-size: 12px;
   }
 
   .carousel img {
