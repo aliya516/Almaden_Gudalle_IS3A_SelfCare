@@ -18,7 +18,7 @@ Website which provides tip and advices regarding self-care.
 
 ## Members
 
-- **Member 1**: Almaden, Aliya 
+## **Member 1**: Almaden, Aliya 
 ## Task Assignments
 
 ### Website Design and Development
@@ -53,7 +53,7 @@ Website which provides tip and advices regarding self-care.
     - Ensuring content and design are accurate and consistent.
 
   
-- **Member 2**: Gudalle, Ma. Reina Cassandra 
+## **Member 2**: Gudalle, Ma. Reina Cassandra 
 ## Task Assignments
 
 ### Website Design and Development
